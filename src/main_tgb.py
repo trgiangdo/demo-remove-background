@@ -52,15 +52,15 @@ with tgb.Page() as page:
 
     with tgb.layout("265px 1fr", columns__mobile="30 70"):
         with tgb.part("sidebar"):
-            tgb.text("Removing Background from image")
+            tgb.text("### Removing Background from image", mode="md")
             tgb.file_selector("{path_upload}", extensions=".png,.jpg", label="Upload your image", on_action=upload_image, class_name="fullwidth")
 
             with tgb.expandable(title="More options", expanded=False):
-                tgb.text("Foreground threshold")
+                tgb.text("**Foreground threshold**", mode="md")
                 tgb.slider("{advanced_properties.alpha_matting_foreground_threshold}", max=500, label="Foreground threshold")
-                tgb.text("Background threshold")
+                tgb.text("**Background threshold**", mode="md")
                 tgb.slider("{advanced_properties.alpha_matting_background_threshold}", max=50, label="Background threshold")
-                tgb.text("Erosion size")
+                tgb.text("**Erosion size**", mode="md")
                 tgb.slider("{advanced_properties.alpha_matting_erode_size}", max=50, label="Erosion size")
 
                 tgb.button("Run with options", on_action=fix_image, class_name="plain fullwidth", active="{original_image}")
@@ -68,7 +68,7 @@ with tgb.Page() as page:
             tgb.file_download("{None}", label="Download result", on_action=download_image, active="{fixed}")
 
         with tgb.part("container"):
-            tgb.text("Background Remover", class_name="h1")
+            tgb.text("# Background Remover", mode="md")
 
             tgb.text("""
 Give it a try by uploading an image to witness the seamless removal of the background. You can download images in full quality from the sidebar.
@@ -78,10 +78,10 @@ This code is open source and accessible on [GitHub](https://github.com/Avaiga/de
 
             with tgb.layout("1 1"):
                 with tgb.part("card text-center", render="{original_image}"):
-                    tgb.text("Original Image 📷")
+                    tgb.text("### Original Image 📷", mode="md")
                     tgb.image("{original_image}")
                 with tgb.part("card text-center", render="{fixed_image}"):
-                    tgb.text("Fixed Image 🔧")
+                    tgb.text("### Fixed Image 🔧", mode="md")
                     tgb.image("{fixed_image}")
 
 
