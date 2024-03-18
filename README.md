@@ -25,7 +25,7 @@
 
 ## How to run
 
-This demo works with a Python version superior to 3.8. Install the dependencies of the *requirements.txt* and run the *main.py*.
+This demo works with a Python version superior to 3.8. Install the dependencies of the *requirements.txt* and run the *main_markdown.py* or *main_tgb.py*.
 
 
 ## Directory Structure
@@ -52,12 +52,12 @@ specific language governing permissions and limitations under the License.
 
 ## Installation
 
-Want to install _demo sales dashboard_? Check out our [`INSTALLATION.md`](INSTALLATION.md) file.
+Want to install _demo remove background_? Check out our [`INSTALLATION.md`](INSTALLATION.md) file.
 
 ## Contributing
 
-Want to help build _demo sales dashboard_? Check out our [`CONTRIBUTING.md`](CONTRIBUTING.md) file.
+Want to help build _demo remove background_? Check out our [`CONTRIBUTING.md`](CONTRIBUTING.md) file.
 
 ## Code of conduct
 
-Want to be part of the _demo sales dashboard_ community? Check out our [`CODE_OF_CONDUCT.md`](CODE_OF_CONDUCT.md) file.
+Want to be part of the _demo remove background_ community? Check out our [`CODE_OF_CONDUCT.md`](CODE_OF_CONDUCT.md) file.
